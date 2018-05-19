@@ -1,7 +1,35 @@
+/*
+- always add em to font sizes post defining base body font
+*/
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900');
 
-body, html {
+body {
     font-family: 'Source Sans Pro', sans-serif;
     height: 100%;
     margin: 0;
+    font-size: 12px;
 }
+
+.heading {
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+.subheading {
+    font-size: 1.67em;
+    font-weight: 400;
+}
+
+.main_button {
+    background-color: #1368c9;
+    color: white;
+    padding: 10px 40px;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
