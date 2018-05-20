@@ -115,35 +115,26 @@ nav a:hover {
     color: #777f88;
 }
 
+/* Container - category icons*/
+/* Put each in a flexbox horizontal*/
 @media screen and (min-width: 768px) {
     #categories ul {
         display: flex;
+        justify-content: space-evenly;
     }
 }
 
-#categories img {
+/*Design for each of those elements*/
+.category_list img {
+    float: left;
     width: 35px;
     height: 35px;
 }
 
-#categories {
-    background: teal;
-
-}
-
-
-/*
-.heading {
-    font-size: 3.5em;
-    font-weight: 900;
-}
-
-.subheading {
-    font-size: 1.67em;
+.category_list p {
+    float: left;
+    font-size: 1.5em;
     font-weight: 400;
+    color: #a1a9b3;
+    margin: 0px 0px 0px 20px;
 }
-
-.main_button {
-
-}
-*/
