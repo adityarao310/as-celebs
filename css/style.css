@@ -6,10 +6,133 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     height: 100%;
-    margin: 0;
     font-size: 12px;
+    max-width: 1200px;
+    margin: 0 auto !important;
 }
 
+/* Container - header menu navbar*/
+nav {
+    margin: 0px 0px 40px 0px;
+}
+
+nav img {
+    width: 144px;
+    height: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.33em;
+    margin: 0px 15px 0px 30px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+/* Container - landing section*/
+/* Make a grid to get the cells needed*/
+#landing_section {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: repeat(3, minmax(50px, auto));
+    margin: 0px 0px 50px 0px;
+}
+
+.heading_1 {
+    font-size: 3.5em;
+    font-weight: 900;
+    margin: 30px 30px 15px 0px;
+}
+
+.subheading_1 {
+    font-size: 1.67em;
+    font-weight: 400;
+    color: #777f88;
+    grid-row: 2/3;
+    margin: 0px 30px 15px 0px;
+}
+
+.landing_image {
+    grid-row: 1/4;
+}
+
+/*stylig of the cells in the grid*/
+#landing_section button{
+    grid-row: 3/4;
+    background: #096cdb;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+}
+
+#landing_section a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#landing_section img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Container - header of results section*/
+.vertical_heading {
+    margin: 0 auto !important;
+    width: 50%;
+    font-size: 3.5em;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.vertical_subheading {
+    font-size: 1.67em;
+    margin: 0 auto !important;
+    width: 50%;
+    font-weight: 400;
+    padding: 10px;
+    color: #777f88;
+}
+
+@media screen and (min-width: 768px) {
+    #categories ul {
+        display: flex;
+    }
+}
+
+#categories img {
+    width: 35px;
+    height: 35px;
+}
+
+#categories {
+    background: teal;
+
+}
+
+
+/*
 .heading {
     font-size: 3.5em;
     font-weight: 900;
@@ -21,15 +144,6 @@ body {
 }
 
 .main_button {
-    background-color: #1368c9;
-    color: white;
-    padding: 10px 40px;
-    font-size: 1.5em;
-    font-weight: 400;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    display: inline-block;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
+}
+*/
