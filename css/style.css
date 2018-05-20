@@ -125,6 +125,9 @@ nav a:hover {
 }
 
 /*Design for each of those elements*/
+#categories {
+    margin: 50px 0px 50px 0px;
+}
 .category_list img {
     float: left;
     width: 35px;
@@ -138,3 +141,20 @@ nav a:hover {
     color: #a1a9b3;
     margin: 0px 0px 0px 20px;
 }
+
+/*Conatiner - list of cards*/
+.card_details {
+    width: 215px;
+    stroke: #096cdb;
+    background: grey;
+    box-shadow: 2 8 2 0 #000000;
+}
+.card_details img{
+    width: 215px;
+    height: 100px;
+}
+
+.card_details_text {
+    margin: 10px;
+}
+
