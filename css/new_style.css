@@ -104,15 +104,24 @@ nav a {
 .list_of_cards {
     margin: 1em;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     justify-content: center;
+    height: 420px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.list_of_cards::-webkit-scrollbar {
+    display: none;
 }
 
 .profile_card {
+    flex: 0 0 auto; 
     width: 213px;
     border-radius: 8px;
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
-    margin: 0 0 1em 0;
+    margin: 1em;
 }
 
 .profile_image {
