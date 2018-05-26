@@ -4,71 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>People with AS</title>
+    <title>Chronic Disease Management</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <a class="burger_nav"></a>
+                <ul>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Reservations</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--
     <nav>
         <ul>
-            <img src="images/logo.png" alt="">
-            <li><a href="">List of people</a></li>
-            <li><a href="">what is as</a></li>
-            <li><a href=""><strong>Need more help?</strong></a></li>
+            <img src="images/logo.png" alt="" id="logo">
+            <li><a href="">Celebs with Ankylosing Spondylitis</a></li>
+            <li><a href=""><strong>Fight your AS</strong></a></li>
+            <img src="images/mobile_menu.png" alt="">
         </ul>
     </nav>
-
-    <div id="landing_section">
-        <div class="heading_1">Ankyolising Spondylitis sucks. Or does it?</div>
-        <div class="subheading_1">Yes it gives you pain. It's not tratable. And its pissing off to be one of the .001%
-                of the people. But maybe there is still hope. Check out some amazing people who have successfully kicked
-                AS in the ass.
+-->
+    <div class="wrapper">   
+    <div class="landing_section">
+        <div id="top_container">
+            <p class="heading_1">Ankyolising Spondylitis getting you down?</p>
+            <p class="subheading_1">Don't let it control you. Millions of people just like
+                    us are fighting the same battles, and living a good 
+                    life. <span style="font-weight:400">If they can, so can us!</span>
+            </p>
+            <button>
+                Find inspiration
+            </button>   
         </div>
-        <button>
-            <a href="#">Find details</a>
-        </button>        
-        <div class="landing_image" id="landing_image">
-            <img src="images/main_image.svg" alt="">
+        <img src="images/main_image.svg" alt="" class="responsive_image">
+    </div>
+
+    <div class="middle_section">
+        <div class="vertical_heading">
+                Some famous people with AS
+        </div>
+        
+        <div class="vertical_subheading">
+                If they can, so can you. If they can, so can you. If they can, so can you. If they can, so can you.
+                If they can, so can you. If they can, so can you.
         </div>
 
+        <div id="categories">
+                <ul>
+                    <div class="category_list">
+                        <img src="images/clipboard.svg" alt="">
+                        <p>All</p>
+                    </div>
+                    <div class="category_list">
+                        <img src="images/003-video-camera.svg" alt="">
+                        <p>Movie stars</p>
+                    </div>
+                    <div class="category_list">
+                        <img src="images/001-trophy.svg" alt="">
+                        <p>Famous sports person</p>
+                    </div>
+                    <div class="category_list">
+                        <img src="images/002-pen.svg" alt="">
+                        <p>Reknowned authors</p>
+                    </div>
+                    <div class="category_list">
+                        <img src="images/004-speech.svg" alt="">
+                        <p>Big politicians</p>
+                    </div>
+                    <div class="category_list">
+                        <img src="images/planning.svg" alt="">
+                        <p>Others</p>
+                    </div>
+                </ul> 
+            </div>
     </div>
 
-    <div class="vertical_heading">
-        Some famous people with AS
-    </div>
 
-    <div class="vertical_subheading">
-        If they can, so can you. If they can, so can you. If they can, so can you. If they can, so can you.
-        If they can, so can you. If they can, so can you.
-    </div>
-
-    <div id="categories">
-        <ul>
-            <div class="category_list">
-                <img src="images/clipboard.svg" alt="">
-                <p>All</p>
-            </div>
-            <div class="category_list">
-                <img src="images/003-video-camera.svg" alt="">
-                <p>Movie stars</p>
-            </div>
-            <div class="category_list">
-                <img src="images/001-trophy.svg" alt="">
-                <p>Famous sports person</p>
-            </div>
-            <div class="category_list">
-                <img src="images/002-pen.svg" alt="">
-                <p>Reknowned authors</p>
-            </div>
-            <div class="category_list">
-                <img src="images/004-speech.svg" alt="">
-                <p>Big politicians</p>
-            </div>
-            <div class="category_list">
-                <img src="images/planning.svg" alt="">
-                <p>Others</p>
-            </div>
-        </ul> 
-    </div>
+    
 
     <div id="card_listings">
         <div class="card_details" id="card_details">
@@ -196,4 +216,7 @@
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="/js/menu.js"></script>
+
 </html>

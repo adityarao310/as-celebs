@@ -11,92 +11,95 @@ body {
     margin: 0 auto !important;
 }
 
-/* Container - header menu navbar*/
-nav {
-    margin: 0px 0px 40px 0px;
+/* Main class around each class to center it */
+.wrapper {
+    width: 100%;
+    max-width: 1164px;
+    padding: 0 1.5em 0 1.5em;
+    margin: 0 auto;
 }
 
-nav img {
-    width: 144px;
-    height: 32px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.33em;
-    margin: 0px 15px 0px 30px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-@media screen and (min-width: 768px) {
-    nav ul {
+/* Header section on mobile */
+@media screen and (max-width:320px) {
+    .landing_section {
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        flex-direction: column;
+        padding: 0em 1.5em 1.5em 1.5em;
     }
+    .heading_1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .subheading_1 {
+        font-size: 1.5em;
+    }
+
+    .responsive_image {
+        display: none;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+
 }
 
-/* Container - landing section*/
-/* Make a grid to get the cells needed*/
-#landing_section {
-    display: grid;
-    grid-template-columns: 65% 35%;
-    grid-template-rows: repeat(3, minmax(50px, auto));
-    margin: 0px 0px 50px 0px;
-}
+
+
+
+
+
 
 .heading_1 {
     font-size: 3.5em;
     color: #011f3f;
     font-weight: 900;
-    margin: 30px 30px 15px 0px;
 }
-
 .subheading_1 {
-    font-size: 1.67em;
-    font-weight: 400;
-    color: #777f88;
-    grid-row: 2/3;
-    margin: 0px 30px 15px 0px;
+    font-size: 1.5em;
+    color: rgb(57, 60, 65);
+    font-weight: 300;
 }
-
-.landing_image {
-    grid-row: 1/4;
-}
-
-/*stylig of the cells in the grid*/
-#landing_section button{
-    grid-row: 3/4;
+button {
     background: #096cdb;
-    text-align: center;
     cursor: pointer;
     border-radius: 4px;
-    width: 120px;
-    height: 40px;
-}
-
-#landing_section a {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
-    font-weight: 400;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    padding: 0.5em 2em;
 }
 
-#landing_section img {
+.responsive_image {
+    grid-area: right;
+    justify-self: center;
+    align-self: center;
+    max-width: 400px;
     width: 100%;
+    height: auto;
+    /*
+    taken from https://www.w3schools.com/howto/howto_css_image_responsive.asp
+    */
+}
+
+/* Container - landing section*/
+/* Make a grid to get the cells needed*/
+.landing_section {
+    display: grid;
+    grid-template-columns: .1fr 1fr 1fr .1fr;
+    grid-gap: 10px;
+    grid-template-areas: ". left right .";
     height: 100%;
 }
 
-
+#top_container {
+    grid-area: left;
+    justify-self: center;
+    align-self: center;
+}
 
 /* Container - header of results section*/
 .vertical_heading {
@@ -117,14 +120,23 @@ nav a:hover {
     color: #777f88;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Container - category icons*/
-/* Put each in a flexbox horizontal*/
-@media screen and (min-width: 768px) {
-    #categories ul {
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
 
 /* Design for each of those elements*/
 #categories {
@@ -245,3 +257,6 @@ input[type=email]::placeholder {
     font-size: 1.167em;
     padding: 10px;
 }
+
+
+
