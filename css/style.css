@@ -89,7 +89,7 @@ nav a {
 .tag {
     background: #479CFF;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 10px;
     border: none;
     text-decoration: none;
     color: white;
@@ -97,7 +97,7 @@ nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     padding: 0.3em;
-    margin: 0.2em;
+    margin: 0.1em 0.2em;
     text-align: center;
     text-decoration: none;
 }
