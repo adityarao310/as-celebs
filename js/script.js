@@ -151,7 +151,7 @@ db_sorted[0].forEach(element => {
         <p class="name">${element.name}</p>
         <p class="title">${element.title}</p>
         <p class="description">${element.description}</p>
-        <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+        <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
     </div>
     `;
     music_markup = music_markup + newmarkup;
@@ -168,7 +168,7 @@ db_sorted[1].forEach(element => {
         <p class="name">${element.name}</p>
         <p class="title">${element.title}</p>
         <p class="description">${element.description}</p>
-        <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+        <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
     </div>
     `;
     science_markup = science_markup+ newmarkup;
@@ -185,7 +185,7 @@ db_sorted[2].forEach(element => {
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     sports_markup = sports_markup+ newmarkup;
@@ -202,7 +202,7 @@ db_sorted[4].forEach(element => {
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     author_markup  = author_markup + newmarkup;
@@ -219,7 +219,7 @@ db_sorted[3].forEach(element => {
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     politics_markup  = politics_markup + newmarkup;
@@ -236,7 +236,7 @@ db_sorted[5].forEach(element => {
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     misc_markup  = misc_markup + newmarkup;
