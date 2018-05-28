@@ -10,20 +10,24 @@
 <body>
     <nav>
         <img src="images/logo.png" alt="">
-        <a href="">Need help?</a>
+        <!-- <a href="#get_help">Need help?</a> -->
     </nav>
 
     <div class="landing_section">
-        <p class="heading_1">Ankyolising Spondylitis getting you down?</p>
-        <p class="heading_2">Don't let it control you. 
-            Millions of people just like us are fighting the same battles &amp; living a 
-            good life. If they can, so can us!</p>
-        <a href="#tags" class="main_cta">Get some inspiration</a>
+        <div id="wrapper_text">
+            <p class="heading_1">Ankyolising Spondylitis getting you down?</p>
+
+            <p class="heading_2">Don't let it control you. 
+                Millions of people just like us are fighting the same battles &amp; living a 
+                good life. If they can, so can us!</p>
+            <a href="#tags" class="main_cta">Get some inspiration</a>
+        </div>
+        <img id="landing_image" src="images/main_image.svg" alt="">
     </div>
 
     <div class="middle_section">
         <p class="heading_3">Some famous AS people</p>
-        <p class="heading_diff"><em>Pssst.. wanna know who is the <a href="">best of them all?</a></em></p>
+        <p class="heading_diff"><em>Pssst.. wanna know who is the <a href="#get_help">best of them all?</a></em></p>
         <div class="tags_list" id="tags">
             <button class="tag" id="music_people">&#x1F3A5;Movie &amp; Music</button>                
             <button class="tag" id="science_people">&#x1F52C;Science</button>
@@ -36,7 +40,7 @@
 
      
     <div class="list_of_cards" id="append_here">
-    <!--    
+    <!-- Now its being inserted into DOM via js   
         <div class="profile_card">
             <img class="profile_image" src="images/645273-amitabhbachchan.jpg" alt="">
             <p class="name">Amitabh Bachan</p>
@@ -48,57 +52,29 @@
                 asdasdasd asdadsasdkjhasdk </p>
             <p class="read_more"><a href="" target="_blank">Read about their struggle</a></p>
         </div>
-        
-        <div class="profile_card">
-                <img class="profile_image" src="images/645273-amitabhbachchan.jpg" alt="">
-                <p class="name">Amitabh Bachan</p>
-                <p class="title">Cricketer, India</p>
-                <p class="description">Cricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, 
-                    IndiaCricket, IndiaCricket, IndiaCricket, India kjhsadkjhjjj
-                    asdasdassskjhasdkjhasdkjh Cricket, IndiaCricket, India asd
-                    asdasdasd asdadsasdkjhasdk </p>
-                <p class="read_more"><a href="">Read about their struggle</a></p>
-        </div>
-        <div class="profile_card">
-                <img class="profile_image" src="images/645273-amitabhbachchan.jpg" alt="">
-                <p class="name">Amitabh Bachan</p>
-                <p class="title">Cricketer, India</p>
-                <p class="description">Cricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, 
-                    IndiaCricket, IndiaCricket, IndiaCricket, India kjhsadkjhjjj
-                    asdasdassskjhasdkjhasdkjh Cricket, IndiaCricket, India asd
-                    asdasdasd asdadsasdkjhasdk hasdkjh Cricket, IndiaCricket, India asd
-                    asdasdasd asdadsasdkjhasdkhasdkjh </p>
-                <p class="read_more"><a href="">Read about their struggle</a></p>
-        </div>
-        <div class="profile_card">
-                <img class="profile_image" src="images/645273-amitabhbachchan.jpg" alt="">
-                <p class="name">Amitabh Bachan</p>
-                <p class="title">Cricketer, India</p>
-                <p class="description">Cricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, 
-                    IndiaCricket, IndiaCricket, IndiaCricket, India kjhsadkjhjjj
-                    asdasdassskjhasdkjhasdkjh Cricket, IndiaCricket, India asd
-                    asdasdasd asdadsasdkjhasdk iaCricket, IndiaCricket, IndiaCricket, IndiaCricket, 
-                    IndiaCricket, IndiaCricket, IndiaCricket, India kjhsadkjhjjj
-                    asdasdassskjhasdkjhasdkjh Cricket</p>
-                <p class="read_more"><a href="">Read about their struggle</a></p>
-        </div>
-        <div class="profile_card">
-                <img class="profile_image" src="images/645273-amitabhbachchan.jpg" alt="">
-                <p class="name"><strong>Amitabh Bachan</strong></p>
-                <p class="title">Cricketer, India</p>
-                <p class="description">Cricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, 
-                    IndiaCricket, IndiaCricket, IndiaCricket, India kjhsadkjhjjj
-                    asdasdassskjhasdkjhasdkjh Cricket, IndiaCricket, India asd
-                    asdasdasd asdadsasdkjhasdk dk iaCricket, IndiaCricket, IndiaCricket, IndiaCricket, 
-                    IndiaCricket, IndiaCricket</p>
-                <p class="read_more"><a href="">Read about their struggle</a></p>
-        </div>
         -->
+    </div>
+
+    <div class="signup_card" id="get_help">
+        <p class="heading_3">&#x270C;You are the best</p>
+        <p class="heading_diff"><em>Yes, you are. All of us have the ability to get to greater heights. 
+            You might feel like giving up sometimes, but today is not that day.</em></p>
+        <div class="bottom_card">
+            <p class="description">It sucks that there is no cure for what we have, but help is available. There are some amazing Facebook groups 
+                (<a href="https://www.facebook.com/groups/6856176878/" target="_blank">Living With Ankylosing Spondylitis</a>, 
+                <a href="https://www.facebook.com/groups/ASWarriorsSupportGroup/" target="_blank">AS Warriors</a>, 
+                <a href="https://www.facebook.com/groups/159755041298161/" target="_blank">AS Natural 
+                Health Team)</a> where people talk about therapies and personal experiences. You must also consult a 
+                good rheumatologist right away if not already.</p>
+            </p>
+        </div>
     </div>
     
 
     <footer>
-        <div class="footer_text">Powered by &#x2615;tea &amp; &#x1F61E;chronic back-pain</p>
+        <p class="footer_text">Powered by &#x2615;tea &amp; &#x1F61E;chronic back-pain<br>
+            Feedback <a href="https://twitter.com/adityarao310" target="_blank">@adityarao310</a>
+        </p>
     </footer>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
