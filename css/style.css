@@ -107,6 +107,11 @@ nav a {
     margin: 0.1em 0.2em;
     text-align: center;
     text-decoration: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.tag:hover, .active {
+    background-color: #0960C6; 
 }
 
 .list_of_cards {
@@ -235,6 +240,9 @@ footer {
     .heading_3 {
         font-size: 2.33em;
     }
+    .tag {
+        padding: 0.3em 0.8em;
+    }
     .signup_card {
         margin: 2em 1em 0 1em;
     }
@@ -284,6 +292,7 @@ footer {
     }
     .tag {
         margin: .5em;
+        padding: 0.3em 0.8em;
     }
     .list_of_cards {
         flex-wrap: wrap;
