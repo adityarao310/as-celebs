@@ -1,6 +1,7 @@
 // Initialise all variables and input data
 // "image": "images/profiles/a61e8c317c2a150458469217d325a59f.jpg",
 // not trailing / is a MUST
+// getElementsByClassName ALWAYS returns an array
 const main_db = [
     {
         "category": "music",
@@ -108,44 +109,33 @@ const main_db = [
     }
 ]
 var db_music = [];var db_author = [];var db_politics = [];var db_science = [];var db_misc = [];var db_sports = [];
-var music_people = document.getElementById('music_people');
-var sports_people = document.getElementById('sports_people');
-var politics_people = document.getElementById('politics_people');
-var misc_people = document.getElementById('misc_people');
-var authors_people = document.getElementById('authors_people');
-var science_people = document.getElementById('science_people');
-var append_to = document.getElementById('append_here');
+let db_sorted = [db_music, db_science, db_sports, db_politics, db_author, db_misc];
+// Used in loading text function
+var music_people = document.getElementById('music_people_tag');
+var sports_people = document.getElementById('sports_people_tag');
+var politics_people = document.getElementById('politics_people_tag');
+var misc_people = document.getElementById('misc_people_tag');
+var authors_people = document.getElementById('authors_people_tag');
+var science_people = document.getElementById('science_people_tag');
+var tags_container = document.getElementById("tags"); // Get the container element of all tags
+var any_tag = tags_container.getElementsByClassName("tag"); // Used in changing color function
+var append_to = document.getElementById('append_here'); // append list of cards
 
 // Store data from big object into individual categories
 function split_db() {
     main_db.forEach(element => {
         if (element.category == "music") {
-            db_music.push(element);
-        }
-    });
-    main_db.forEach(element => {
-        if (element.category == "author") {
-            db_author.push(element);
-        }
-    });
-    main_db.forEach(element => {
-        if (element.category == "politician") {
-            db_politics.push(element);
-        }
-    });
-    main_db.forEach(element => {
-        if (element.category == "scientist") {
-            db_science.push(element);
-        }
-    });
-    main_db.forEach(element => {
-        if (element.category == "misc") {
-            db_misc.push(element);
-        }
-    });
-    main_db.forEach(element => {
-        if (element.category == "sports") {
-            db_sports.push(element);
+            db_sorted[0].push(element);
+        } else if (element.category == "author") {
+            db_sorted[4].push(element);
+        } else if (element.category == "politician") {
+            db_sorted[3].push(element);
+        } else if (element.category == "scientist") {
+            db_sorted[1].push(element);
+        } else if (element.category == "misc") {
+            db_sorted[5].push(element);
+        } else if (element.category == "sports") {
+            db_sorted[2].push(element);
         }
     });
 }
@@ -154,15 +144,15 @@ split_db();
 // Generate big markup for each category
 function music() {
 let music_markup = ``;
-db_music.forEach(element => {
-    newmarkup = `
-        <div class="profile_card">
-            <img class="profile_image" src="${element.image}" alt="">
-            <p class="name">${element.name}</p>
-            <p class="title">${element.title}</p>
-            <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
-        </div>
+db_sorted[0].forEach(element => {
+    let newmarkup = `
+    <div class="profile_card">
+        <img class="profile_image" src="${element.image}" alt="">
+        <p class="name">${element.name}</p>
+        <p class="title">${element.title}</p>
+        <p class="description">${element.description}</p>
+        <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
+    </div>
     `;
     music_markup = music_markup + newmarkup;
 });
@@ -171,15 +161,15 @@ append_to.innerHTML = music_markup;
 
 function science() {
 let science_markup = ``;
-db_science.forEach(element => {
-    newmarkup = `
-        <div class="profile_card">
-            <img class="profile_image" src="${element.image}" alt="">
-            <p class="name">${element.name}</p>
-            <p class="title">${element.title}</p>
-            <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
-        </div>
+db_sorted[1].forEach(element => {
+    let newmarkup = `
+    <div class="profile_card">
+        <img class="profile_image" src="${element.image}" alt="">
+        <p class="name">${element.name}</p>
+        <p class="title">${element.title}</p>
+        <p class="description">${element.description}</p>
+        <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
+    </div>
     `;
     science_markup = science_markup+ newmarkup;
 });
@@ -188,14 +178,14 @@ append_to.innerHTML = science_markup;
 
 function sports() {
 let sports_markup = ``;
-db_sports.forEach(element => {
+db_sorted[2].forEach(element => {
     newmarkup = `
         <div class="profile_card">
             <img class="profile_image" src="${element.image}" alt="">
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     sports_markup = sports_markup+ newmarkup;
@@ -205,14 +195,14 @@ append_to.innerHTML = sports_markup;
 
 function author() {
 let author_markup = ``;
-db_author.forEach(element => {
+db_sorted[4].forEach(element => {
     newmarkup = `
         <div class="profile_card">
             <img class="profile_image" src="${element.image}" alt="">
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     author_markup  = author_markup + newmarkup;
@@ -222,14 +212,14 @@ append_to.innerHTML = author_markup ;
 
 function politics() {
 let politics_markup = ``;
-db_politics.forEach(element => {
+db_sorted[3].forEach(element => {
     newmarkup = `
         <div class="profile_card">
             <img class="profile_image" src="${element.image}" alt="">
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     politics_markup  = politics_markup + newmarkup;
@@ -239,14 +229,14 @@ append_to.innerHTML = politics_markup ;
 
 function misc() {
 let misc_markup = ``;
-db_misc.forEach(element => {
+db_sorted[5].forEach(element => {
     newmarkup = `
         <div class="profile_card">
             <img class="profile_image" src="${element.image}" alt="">
             <p class="name">${element.name}</p>
             <p class="title">${element.title}</p>
             <p class="description">${element.description}</p>
-            <p class="read_more"><a href="${element.link}">Read about their struggle</a></p>
+            <p class="read_more"><a href="${element.link}" target="_blank">Read about their struggle</a></p>
         </div>
     `;
     misc_markup  = misc_markup + newmarkup;
@@ -254,11 +244,21 @@ db_misc.forEach(element => {
 append_to.innerHTML = misc_markup ;
 }
 
-// Run functions on click and page load
+// Run functions on click and page load and by default load music
 window.onload = music();
-sports_people.addEventListener("click", sports);
 politics_people.addEventListener("click", politics);
 misc_people.addEventListener("click", misc);
+sports_people.addEventListener("click", sports);
 authors_people.addEventListener("click", author);
 science_people.addEventListener("click", science);
 music_people.addEventListener("click", music);
+
+// Loop through the tags and add the active class to the current/clicked 
+for (var i = 0; i < any_tag.length; i++) {
+    any_tag[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
