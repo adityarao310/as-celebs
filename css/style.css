@@ -1,7 +1,8 @@
-@import url('https://fonts.google.com/selection?selection.family=Source+Sans+Pro:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700');
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 400;
     font-size: 12px;
     max-width: 1600px;
     margin: 0 auto !important;
@@ -41,14 +42,14 @@ nav a {
 }
 
 .heading_1 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3em;
     text-align: center;
     margin: 0;
 }
 
 .heading_2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5em;
     text-align: center;
     margin: 1em 0 0 0;
@@ -63,10 +64,10 @@ nav a {
     color: white;
     font-size: 1.5em;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0.5em;
     margin: 1em 0 0 0;
-    width: 155px;
+    width: 160px;
     text-align: center;
     text-decoration: none;
     appearance: none;
@@ -78,14 +79,14 @@ nav a {
 }
 
 .heading_3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2em;
     text-align: center;
     margin: 0;
 }
 
 .heading_diff {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.33em;
     margin: 0 0 0.8em 0;
     text-align: center;
@@ -106,7 +107,7 @@ nav a {
     color: white;
     font-size: 1.3em;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0.3em;
     margin: 0.1em 0.2em;
     text-align: center;
@@ -149,7 +150,7 @@ nav a {
 }
 
 .name {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.678em;
     margin: 0.5em 0.5em 0 0.4em;
 }
@@ -161,7 +162,7 @@ nav a {
 }
 
 .description {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.33em;
     margin: 0 0.5em 0.5em 0.5em;
 }
