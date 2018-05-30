@@ -109,7 +109,7 @@ const main_db =
         "name": "Leonard Trask"
     },
     {
-        "category": "author",
+        "category": "scientist",
         "description": "The disease left him in almost constant pain and doctors suggested that he would die in a few months. He disagreed and went on a \"laughing matter\" diet. High doses of vitamin C with a stream of humurous films helped him come out within 6 months.",
         "title": "Journalist, Peace Advocate",
         "image": "images/profiles/50716694.jpg",
