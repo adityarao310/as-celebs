@@ -66,10 +66,12 @@ nav a {
     font-weight: 300;
     padding: 0.5em;
     margin: 1em 0 0 0;
-    width: 150px;
+    width: 155px;
     text-align: center;
     text-decoration: none;
+    appearance: none;
 }
+
 
 .middle_section {
     margin: 2em 1em 2em 1em;
