@@ -6,21 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ankylosing Spondylitis Help</title>
     <link rel="shortcut icon" href="images/favicon_chronic_help.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120058579-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120058579-1');
+</script>
+
 </head>
 <body>
     <nav>
-        <img src="images/logo.svg" alt="">
-        <a href="https://www.google.co.in/search?q=ankylosing+spondylitis" target="_blank">What's AS?</a>
+        <img src="images/logo.png" alt="">
+        <a href="#email_signup">Get help</a>
     </nav>
 
     <div class="landing_section">
         <div id="wrapper_text">
-            <p class="heading_1"><strong>Is Ankyolising Spondylitis getting you down?</strong></p>
+            <p class="heading_1"><strong>Ankyolising Spondylitis getting you down?</strong></p>
 
-            <p class="heading_2">Don't let it control you and keep moving on. Millions of people just like you are fighting the same battles &amp; living their lives. 
+            <p class="heading_2">Don't let it control you! Millions of people just like us are fighting the same battles &amp; living their lives.
                 If they can, so can you!</p>
-            <a href="#middle_heading" class="main_cta" id="main_button">Get some inspiration</a>
+            <a href="#middle_heading" class="main_cta" id="main_button">Get inspired</a>
         </div>
         <img id="landing_image" src="images/main_image.svg" alt="">
     </div>
@@ -29,7 +40,7 @@
         <p class="heading_3" id="middle_heading"><strong>Some famous people with AS</strong></p>
         <p class="heading_diff"><em>List of people with Ankylosing Spondylitis in various domains of life.</em></p>
         <div class="tags_list" id="tags">
-            <button class="tag active" id="music_people_tag">&#x1F3A5;Movie &amp; Music</button>                
+            <button class="tag active" id="music_people_tag">&#x1F3A5;Movie &amp; Music</button>
             <button class="tag" id="science_people_tag">&#x1F52C;Science &amp; Academia</button>
             <button class="tag" id="sports_people_tag">&#x1F3C5;Sports</button>
             <button class="tag" id="politics_people_tag">&#x1F4AC;Politics</button>
@@ -38,14 +49,14 @@
         </div>
     </div>
 
-     
+
     <div class="list_of_cards" id="append_here">
-    <!-- Now its being inserted into DOM via js   
+    <!-- Now its being inserted into DOM via js
         <div class="profile_card">
             <img class="profile_image" src="images/645273-amitabhbachchan.jpg" alt="">
             <p class="name">Amitabh Bachan</p>
             <p class="title">Cricketer, India</p>
-            <p class="description">Cricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, 
+            <p class="description">Cricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket, IndiaCricket,
                 IndiaCricket, IndiaCricket, IndiaCricket, India kjhsadkjhjjj
                 asdasdassskjhasdkjhasdkjh Cricket, IndiaCricket, India asd
                 asdasdasd asdadsasdkjhasdk sdkjh Cricket, IndiaCricket, India asd
@@ -56,26 +67,42 @@
     </div>
 
     <div class="signup_card" id="get_help">
-        <p class="heading_3">&#x270C;Feeling a bit better?</p>
-        <p class="heading_diff"><em>The next time you feel down, remember these names! You are not alone, and neither are
-            you weak. Today might be tough, but tomorrow will be better.</em></p>
+        <p class="heading_3" id="email_signup">&#x270C;Steps to a better life</p>
+        <p class="heading_diff"><em>You do not have to be alone, helpless and lost. Help is available out there.</em></p>
         <div class="bottom_card">
-            <p class="description">It sucks that there is no cure for what we have, but help is available. There are some amazing Facebook groups 
-                (<a href="https://www.facebook.com/groups/6856176878/" target="_blank">Living With Ankylosing Spondylitis</a>, 
-                <a href="https://www.facebook.com/groups/ASWarriorsSupportGroup/" target="_blank">AS Warriors</a>, 
-                <a href="https://www.facebook.com/groups/159755041298161/" target="_blank">AS Natural 
-                Health Team)</a> where people talk about therapies and personal experiences. You must also consult a 
-                good rheumatologist right away if not already.</p>
+            <!-- <p class="heading_4"><strong>Need more help?</strong></p> -->
+            <p class="description">I have been suffering from AS for 12 years; and I am finally taking a more proactive approach
+                to building better habits and lifestyle. Let's fight it together! Check out these Facebook groups
+                    (<a href="https://www.facebook.com/groups/6856176878/" target="_blank">Living With Ankylosing Spondylitis</a>,
+                    <a href="https://www.facebook.com/groups/ASWarriorsSupportGroup/" target="_blank">AS Warriors</a>,
+                    <a href="https://www.facebook.com/groups/159755041298161/" target="_blank">AS Natural
+                    Health Team)</a> where people talk share personal experiences.</p>
             </p>
+            <p class="description"><strong>I am also working hard to build tools and research best practices that are working well for everyone.</strong> You can sign up below
+                to stay updated.
+            </p>
+            <div class="email_form" id="revue-form">
+                <form action="https://www.getrevue.co/profile/chronic-help/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+                    <div class="revue-form-group">
+                        <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+                    </div>
+                    <p class="fyi"><em>No spam, I personally share updates only with fellow AS friends</em></p>
+                    <div class="revue-form-actions">
+                        <input type="submit" value="Get help" name="member[subscribe]" id="member_submit" class="secondary_cta">
+                    </div>
+
+                    </form>
+            </div>
         </div>
     </div>
-    
+
 
     <footer>
         <p class="footer_text">Powered by &#x2615;tea &amp; &#x1F61E;chronic back-pain<br>
-            Feedback <a href="https://twitter.com/adityarao310" target="_blank">@adityarao310</a>
+            Give feedback <a href="https://twitter.com/adityarao310" target="_blank">@adityarao310</a>
         </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
