@@ -2,7 +2,7 @@
 // "image": "images/profiles/a61e8c317c2a150458469217d325a59f.jpg",
 // not trailing / is a MUST
 // getElementsByClassName ALWAYS returns an array
-const main_db = 
+const main_db =
 [
     {
         "category": "music",
@@ -387,7 +387,15 @@ const main_db =
         "image": "images/profiles/jfk-at-100-st-309-4-63.jpg",
         "link": "https://www.spineuniverse.com/conditions/back-pain/john-f-kennedy-s-life-long-struggles-chronic-back-pain",
         "name": "John F Kennedy"
-    }
+    },
+    {
+        "category": "sports",
+        "description": "Diagnosed at just 19, this young endurance athlete won't let his disease act as a roadblock to success. He wants to become the world’s first professional triathlete with AS",
+        "title": "Health Activist/Endurance Athlete",
+        "image": "images/profiles/Helgi-Olafson-AS-722x406.jpg",
+        "link": "https://www.spondylitis.org/Your-Stories/helgi-olafson",
+        "name": "Helgi Olafson"
+    },
 ]
 
 var db_music = [];var db_author = [];var db_politics = [];var db_science = [];var db_misc = [];var db_sports = [];
@@ -535,7 +543,7 @@ authors_people.addEventListener("click", author);
 science_people.addEventListener("click", science);
 music_people.addEventListener("click", music);
 
-// Loop through the tags and add the active class to the current/clicked 
+// Loop through the tags and add the active class to the current/clicked
 for (var i = 0; i < any_tag.length; i++) {
     any_tag[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("active");
@@ -543,4 +551,3 @@ for (var i = 0; i < any_tag.length; i++) {
       this.className += " active";
     });
   }
-
